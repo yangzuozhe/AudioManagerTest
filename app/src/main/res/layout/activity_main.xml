@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clDemo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="停止" />
+
+        <Button
+            android:id="@+id/btnHigher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="调高音量" />
+
+        <Button
+            android:id="@+id/btnLower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="调低音量" />
+
+        <Button
+            android:id="@+id/btnQuite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="静音" />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/LinearLayout1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <racom.example.audiomanagertest.MyProgress
+        android:id="@+id/myProgress"
+        android:layout_width="100dp"
+        android:layout_height="500dp"
+        app:layout_constraintStart_toEndOf="@+id/LinearLayout1"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
