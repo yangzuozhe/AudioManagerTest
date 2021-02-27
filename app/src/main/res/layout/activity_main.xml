@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="停止" />
+            android:text="暂停" />
 
         <Button
             android:id="@+id/btnHigher"
@@ -43,24 +43,13 @@
             android:layout_height="wrap_content"
             android:text="静音" />
 
+        <Button
+            android:id="@+id/btnIsPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否有音乐在播放" />
+
     </LinearLayout>
 
-
-    <ProgressBar
-        android:id="@+id/pbProgress"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LinearLayout1"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <racom.example.audiomanagertest.MyProgress
-        android:id="@+id/myProgress"
-        android:layout_width="100dp"
-        android:layout_height="500dp"
-        app:layout_constraintStart_toEndOf="@+id/LinearLayout1"
-        android:background="@android:color/holo_green_light"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
